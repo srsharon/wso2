@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AppM Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<video muted autoplay  poster="imgs/WSO2.jpg" id="bgvid" loop>
+    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+    <source src="imgs/Life%20at%20WSO2.mp4" type="video/mp4">
+</video>
+<div id="polina">
+    <!--login modal-->
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="padding-left-double">Login to continue</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="form row center-block">
+                        <div class="form-group row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 title-label  ">Username :</div>
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                <input type="text" class="form-control input-lg" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 title-label ">Password :</div>
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                <input type="password" class="form-control input-lg" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-lg-9 pull-right margin-top margin-bottom padding-left-double left">
+                            <input id="option" type="checkbox" name="field" value="option">
+                            <label for="option">Remember me on this computer</label>
+                        </div>
+                        <div class="form-group row ">
+                            <div class="col-xs-12 col-sm-9 col-md-12 col-lg-9 pull-right left">
+                                <div class="col-xs-5  col-sm-3 col-md-3 col-lg-3">
+                                    <button class="btn btn-primary ">Sign In</button>
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-md-3  col-lg-3  ">
+                                    <button class="btn btn-default " data-dismiss="modal" aria-hidden="true">Back to Store</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <!-- script references -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/video.js"></script>
+</body>
+</html>
